@@ -1,0 +1,6 @@
+dist
+node_modules
+**/*.sw*
+.DS_Store
+.idea
+*.iml

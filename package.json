@@ -1,0 +1,48 @@
+{
+  "name": "three-devtools",
+  "private": true,
+  "version": "0.4.0",
+  "description": "three.js developer tools web extension",
+  "scripts": {
+    "build:source": "./scripts/build-source.sh",
+    "build:deps": "./scripts/build-deps.sh",
+    "build:dist": "./scripts/build-dist.sh",
+    "build:dist:chrome": "./scripts/build-dist.sh chrome",
+    "serve": "http-server . -c-1",
+    "version": "node ./scripts/version.js && git add *.json",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsantell/three-devtools.git"
+  },
+  "author": "Jordan Santell <jordan@jsantell.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsantell/three-devtools/issues"
+  },
+  "homepage": "https://github.com/jsantell/three-devtools#readme",
+  "dependencies": {
+    "@egjs/agent": "2.1.5",
+    "lit-element": "2.2.1",
+    "lit-html": "1.1.2",
+    "three": "0.112.0",
+    "webextension-polyfill": "0.4.0"
+  },
+  "devDependencies": {
+    "http-server": "^0.12.0",
+    "json": "9.0.6"
+  },
+  "@pika/web": {
+    "webDependencies": [
+      "webextension-polyfill/dist/browser-polyfill.js",
+      "lit-element",
+      "lit-html/directives/if-defined.js",
+      "@egjs/agent",
+      "three",
+      "three/src/constants.js",
+      "three/examples/jsm/loaders/GLTFLoader.js",
+      "three/examples/jsm/geometries/TeapotBufferGeometry.js"
+    ]
+  }
+}
