@@ -1,4 +1,4 @@
-import {Cache, CubeTexture, EventDispatcher, GammaEncoding, NearestFilter, RGBEEncoding, TextureLoader} from '../../web_modules/three.js';
+import { Cache, CubeTexture, EventDispatcher, GammaEncoding, NearestFilter, RGBEEncoding, TextureLoader } from '../../web_modules/three.js';
 
 import EquirectangularToCubeGenerator from './EquirectangularToCubeGenerator.js';
 import { PMREMCubeUVPacker } from '../../web_modules/three/examples/jsm/pmrem/PMREMCubeUVPacker.js';
