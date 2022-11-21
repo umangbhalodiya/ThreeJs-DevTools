@@ -1,21 +1,17 @@
 import browser from '../../web_modules/webextension-polyfill/dist/browser-polyfill.js';
 import getAgent from '../../web_modules/@egjs/agent.js';
 import AppElement from './elements/AppElement.js';
-
 import RendererViewElement from './elements/RendererViewElement.js';
 import SceneViewElement from './elements/SceneViewElement.js';
 import ResourcesViewElement from './elements/ResourcesViewElement.js';
 import ParametersViewElement from './elements/ParametersViewElement.js';
-
 import TitleBarElement from './elements/TitleBarElement.js';
-
 import ImagePreviewElement from './elements/ImagePreviewElement.js';
 import KeyValueElement from './elements/values/KeyValueElement.js';
 import MaterialValueElement from './elements/values/MaterialValueElement.js';
 import TextureValueElement from './elements/values/TextureValueElement.js';
 import EnumValueElement from './elements/values/EnumValueElement.js';
 import TabBarElement from './elements/TabBarElement.js';
-
 import NumberInputElement from './common-elements/NumberInputElement.js';
 import TreeItemElement from './common-elements/TreeItemElement.js';
 import AccordionViewElement from './common-elements/AccordionViewElement.js';
